@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: red;
+        }
+
+       #id1{
+        color: blueviolet;
+       }
+
+       .green_text{
+        color: green;
+       }
+
+       #id2{
+        font-size: 60px;
+       }
+
+      .underline{
+        text-decoration: underline;
+      }
+    </style>
+</head>
+<body>
+    <!-- WE HAVE THREE SELECTORS PRESENT IN THE CSS.  -->
+    <!--   1.ELEMENT SELECTOR  (WE ALREADY LEARN IN '1' PART. [ie <p>] )
+           2.ID SELECTOR
+           3.CLASS SELECTOR.  -->
+   
+    
+    <!-- ID SELECTOR :------       -->
+    <!-- The id selector uses the id attribute of an HTML element to select a specific element.
+    The id of an element is unique within a page, so the id selector is used to select one unique element!  
+    To select an element with a specific id, write a hash (#) character, followed by the id of the element. -->
+
+    <!-- CLASS SELECTOR:-------    -->
+    <!--  The class selector selects HTML elements with a specific class attribute(A space-separated list of the classes of the element).To select elements with a specific class, write a period (.) character, followed by the class name.  -->
+ 
+    <h1 class="green_text"> heading</h1>
+    <p> Prabhat Mishra </p><hr>
+    <p id="id1"> Prabhat Mishra </p><hr>
+    <p> Prabhat Mishra </p><hr> 
+    <p class="green_text"> Prabhat Mishra </p><hr> 
+    <p class="green_text"> Prabhat Mishra </p><hr>
+    
+    <!-- WE CAN USE 'ID' AND 'CLASS' AT ONE ELEMENT.  -->
+    <h1 class="green_text" id="id1" > heading</h1><hr> 
+    <!-- if class represents 'green' and id represents'blueviolet' , then it follow id because it has a unique indentifier(id). -->  
+
+    <!-- WE CAN ADD MULTIPLE CLASSES TO AN ELEMENT BUT  IN CASE OF ID WE CAN'T (ID IS UINQUE). -->
+    <!-- for adding classes we use spaces" ". -->
+    <h1 id="id2" class="green_text underline"> heading</h1><hr>
+
+    <!-- incase of priority:---
+         id selectors>class selectors>element selectors  -->
+    <!-- in order:-- 
+        means same name 'id' or 'class' we want change ,those selector present at last will be selected.-->
+    <p id="id1" class="green_text" > heading</p><hr>
+    <p class="green_text" > heading</p><hr>
+    <p> heading</p><hr>
+</body >
+</html>

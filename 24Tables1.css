@@ -1,0 +1,70 @@
+/*  We can define height and width of table! */
+/*  We can allign text.[(vertical allign :-- top or bottom) and (horizontal allign :-- left center right)] */
+
+/* Notice that the table in the examples above have double borders. This is because both the table and 
+   the <th> and <td> elements have separate borders. 
+   " Collapse Table Borders "    */
+
+/* Table Padding:---
+     To control the space between the border and the content in a table, use the padding property on <td> and <th> elements: 
+    
+    Horizontal Dividers:----
+      specific horizontal line.(Border-bottom:)
+    
+    Hoverable Table:----
+      Use the :hover selector on <tr> to highlight table rows on mouse over:*/
+
+#id1 table,th,td{
+    border: 2px solid red;
+    width: 100%; /* entire screen */
+    height: 30px; 
+    vertical-align: top;
+    text-align:center;
+    padding: 15px; 
+}
+#id1 th{
+    background-color: yellow;
+}
+
+#id2 table,th,td{ 
+    border: 2px solid red;
+    width: 100%;
+    border-collapse: collapse ;
+    height: 50px; 
+    vertical-align: top;
+    text-align:center;
+    padding: 15px; 
+}
+#id2 tr:hover{
+ background-color: aqua;
+}
+
+
+/* Striped Tables:---- */
+#id3 table,th,td{
+    border: 2px solid red;
+    width: 100%;
+    border-collapse: collapse ;
+    height: 50px; 
+    vertical-align: top;
+    text-align:center;
+    padding: 15px;    
+}
+#id3 tr:nth-child(even)  /* other wise((odd)*/
+ {
+    background-color: orange;
+}
+
+/* Responsive Table:----- */
+/* A responsive table will display a horizontal scroll bar if the screen is too small to display the 
+   full content.*/
+#id4 table,th,td{
+    border: 2px solid red;
+    width: 100%;
+    border-collapse: collapse ;
+    height: 50px; 
+    vertical-align:bottom;
+    text-align:left;
+    padding: 15px; 
+    overflow-x: auto;   
+}

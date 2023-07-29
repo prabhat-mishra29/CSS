@@ -1,0 +1,13 @@
+
+/* "vh" represents the viewport-percentage length unit based on the browser default viewport size. "vw" Represents a percentage of the width of the viewport's initial containing block. 1vw is 1% of the viewport width. For example, if the viewport width is 800px , then a value of 50vw on a property will be 400px. */
+
+#parent{
+    border: 2px solid red;
+    height:50vh;
+    width:50vw;
+ }
+  #child{
+    border: 2px solid blue;
+    width: 50%;  /*  50% of parent <div>*/ 
+     } 
+     

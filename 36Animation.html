@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ /*
+CSS Animations:----
+CSS allows animation of HTML elements without using JavaScript or Flash! 
+   1.@keyframes
+   2.animation-name
+   3.animation-duration
+   4.animation-delay
+   5.animation-iteration-count
+   6.animation-direction
+   7.animation-timing-function
+   8.animation-fill-mode
+   9.animation
+     
+The @keyframes Rule:-----
+When you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at certain times.
+To get an animation to work, you must bind the animation to an element.
+
+Animation-duration:------ 
+this property defines how long an animation should take to complete. If the animation-duration property is not specified, no animation will occur, because the default value is 0s (0 seconds).
+
+It is also possible to use percent. By using percent, you can add as many style changes as you like.*/
+@keyframes Animation1 {
+    from {background-color: red;}
+  to {background-color: yellow;}
+}
+#id1{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: Animation1;
+  animation-duration: 4s;
+}
+
+@keyframes Animation2 {
+   0% {background-color:red;}
+  25%  {background-color:yellow;}
+  50%  {background-color:blue;}
+  75%  {background-color:green;}
+  100% {background-color:red;}
+}
+#id2{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: Animation2;
+  animation-duration: 8s; /* 8s is devied into 5 parts.As every part it changes it's color! */
+}
+
+/* Delay an Animation:---
+The animation-delay property specifies a delay for the start of an animation.
+Negative values are also allowed. If using negative values, the animation will start as if it had already been playing for N seconds.*/
+
+/*
+Animation-iteration-count:------
+This property specifies the number of times an animation should run. */
+@keyframes Animation3 {
+   0%  {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+#id3{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: Animation3;
+  animation-duration: 8s;
+  animation-iteration-count: 3; /* can be "infinite' */
+  /* animation-delay:-2s; */
+  animation-direction: alternate-reverse;
+}
+
+/*
+Animation-direction:----
+This property specifies whether an animation should be played forwards, backwards or in alternate cycles.
+The animation-direction property can have the following values:------
+     normal    - The animation is played as normal (forwards). This is default
+     reverse   - The animation is played in reverse direction (backwards)
+     alternate - The animation is played forwards first, then backwards
+     alternate-reverse - The animation is played backwards first, then forwards */
+
+/* 
+Animation-timing-function:------ 
+This property specifies the speed curve of the animation.
+The animation-timing-function property can have the following values:-------
+     ease        - Specifies an animation with a slow start, then fast, then end slowly (this is default)
+     linear      - Specifies an animation with the same speed from start to end
+     ease-in     - Specifies an animation with a slow start
+     ease-out    - Specifies an animation with a slow end
+     ease-in-out - Specifies an animation with a slow start and end
+     cubic-bezier(n,n,n,n) - Lets you define your own values in a cubic-bezier function */
+
+@keyframes Animation4 {
+   0%  {background-color:rgb(242, 0, 255);border-radius:0%}
+  10% {background-color:rgb(136, 0, 255); border-radius:10%}
+  20%  {background-color:rgb(43, 0, 255); border-radius:20%}
+  30%  {background-color:green; border-radius:30%}
+  40% {background-color:rgb(208, 255, 0);border-radius:40%}
+  50% {background-color:rgb(255, 81, 0);border-radius:50%} 
+  60% {background-color:red;border-radius:40%} 
+  70%  {background-color:rgb(255, 0, 238);border-radius:30%}
+  80%  {background-color:rgb(106, 0, 255);border-radius:20%}
+  90%  {background-color:rgb(17, 0, 255);border-radius:10%}
+  100% {background-color:rgb(0, 255, 30);border-radius:0%}
+}
+#id4{
+  width: 100px;
+  height: 100px;
+  animation-name: Animation4;
+  animation-duration:1s;
+  animation-iteration-count:infinite;
+}
+/* [animation:animation-name,animation-duration,animation-timing-function,animation-delay,animation-iteration-count,animation-direction] 
+*/
+    </style>
+</head>
+<body>
+    <div id="id1"></div><br><br>
+    <div id="id2"></div><br><br>
+    <div id="id3"></div><br><br>
+    <div id="id4"></div><br><br>
+</body>
+</html>

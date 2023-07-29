@@ -1,0 +1,24 @@
+#id8{
+    background-image: radial-gradient(red, yellow, green);
+    width:400px;
+    height: 300px;
+}
+#id9{
+    background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+    width:400px;
+    height: 300px;
+}
+
+/* Set Shape :----- */
+#id10{
+    background-image: radial-gradient(circle, red, yellow, green);
+    width:400px;
+    height: 300px;
+}
+
+/* Repeating a radial-gradient */
+#id11{
+    background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+    width:400px;
+    height: 300px;
+}

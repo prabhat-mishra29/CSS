@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/* The "!important" rule in CSS is used to add more importance to a property/value than normal. */
+#myid {
+  background-color: blue;
+}
+.myclass {
+  background-color: gray;
+}
+p {
+  background-color: red  !important;
+}
+
+    </style>
+</head>
+<body>
+    
+<p>This is some text in a paragraph.</p>
+<p class="myclass">This is some text in a paragraph.</p>
+<p id="myid">This is some text in a paragraph.</p>
+
+<!-- 
+Tip:-- It is good to know about the !important rule. You might see it in some CSS source code.     
+       However, do not use it unless you absolutely have to. -->
+</body>
+</html>

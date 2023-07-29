@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* The "perspective" property is used to give a 3D-positioned element some perspective.
+The perspective property defines how far the object is away from the user. So, a lower value will result in a more intensive 3D effect than a higher value.
+
+The "perspective-origin" property defines at from which position the user is looking at the 3D-positioned element.*/
+    #id1{
+       border: 2px solid red;
+       width: 100px;
+       height: 100px;
+       margin: 30px;
+    }
+#id2{
+    width: 100px;
+       height: 100px;
+    background-color: cyan;
+    transform: perspective(300px) rotate3d(30,30,30,30deg); /* rotate3d(px,px,px,deg) */
+}
+#id3{
+       border: 2px solid red;
+       width: 100px;
+       height: 100px;
+       margin: 30px;
+    }
+#id4{
+    width: 100px;
+       height: 100px;
+    background-color: cyan;
+transform: perspective(300px) translate3d(50px,50px,50px); /* transform(x-axis_px,y-axis_px,z-axis_px)*/
+}
+    </style>
+</head>
+<body>
+    <div id="id1">
+        <div id="id2">id 2222</div>
+    </div>
+<br>
+<div id="id3">
+    <div id="id4">id 4444</div>
+</div>
+</body>
+</html>

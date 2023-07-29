@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    /* The 'box-shadow" property attaches one or more shadows to an element. */
+    #id1{
+        border: 1px solid green;
+        color: green;
+        background-color: beige;
+        width: 500px;
+        padding: 30px;
+        margin: 50px;
+        font-size: 20px;
+        box-shadow:10px 15px 7px 3px hotpink;     /* OUTSIDE */
+        /*  (X-axis) (Y-axis) (blur-radius) (spread_radius) (color)*/
+    }
+
+    #id2{
+        border: 1px solid green;
+        color: green;
+        background-color: beige;
+        width: 500px;
+        padding: 30px;
+        margin: 50px;
+        font-size: 20px;
+        box-shadow:10px 15px 7px 3px hotpink inset;     /* INSIDE */
+        /*  (X-axis) (Y-axis) (blur-radius) (spread_radius) (color)*/
+    }
+    
+    #id3{
+        border: 1px solid green;
+        color: green;
+        background-color: beige;
+        width: 500px;
+        padding: 30px;
+        margin: 50px;
+        font-size: 20px;
+        box-shadow:10px 15px 7px 3px hotpink,-10px 15px 7px 3px rgb(2, 202, 252); /* MULTIPLE SIDE*/  
+        /*      (right-side box-shadow(by-default))      (left-side box-shadow) */
+        
+        /*  X-AXIS and Y-AXIS can be "-ve"  */
+        /*  (X-axis) (Y-axis) (blur-radius) (spread_radius) (color)*/
+    }
+    </style>
+</head>
+<body>
+    <div  id="id1">
+    <p>
+        Gaming is my world!
+    </p></div><br><br>
+
+    <div  id="id2">
+    <p>
+        Gaming is my world!
+    </p></div><br><br>
+    
+    <div  id="id3">
+    <p>
+        Gaming is my world!
+    </p></div><br><br>
+</body>
+</html>

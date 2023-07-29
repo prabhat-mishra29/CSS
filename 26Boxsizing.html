@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<!--"Box-sizing" Defines how the width and height of an element are calculated: should they include 
+     padding and borders, or not -->
+     <!-- check out "Box-size" property at w3school! -->
+     <style>
+        #id1{
+            background-color: aqua;
+            height: 100px;
+            width: 800px;
+        }
+        #id2{
+            background-color: rgb(255, 0, 217);
+            height: 100px;
+            width: 800px;
+            padding: 30px;
+            box-sizing: content-box; /*(by-default) -- height and width goes to content which means all
+                                       contents are shown...*/
+        }  
+        #id3{
+            background-color: rgb(9, 255, 0);
+            height: 100px;
+            width: 800px;
+            padding: 30px;
+            box-sizing: border-box; /* height and width goes to total element size and all contents are 
+                                      not shown. */
+        }  
+     </style>
+</head>
+<body>
+    <div id="id1"> id1</div><hr> 
+    <div id="id2">id2</div><hr>
+    <div id="id3">id3</div>
+</body>
+</html>

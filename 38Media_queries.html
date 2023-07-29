@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id1{
+            background-color: blue;
+            color: white;
+            float: left;
+            width: 70%;
+        }
+        #id2{
+            background-color: green;
+            color: white;
+            float: left;
+            width: 30%;
+        }
+
+        h1{
+            font-size: 80px;
+        }
+
+        /* "i-pad's width : 768px" 
+           "iphone-xr's width : 414px" */   
+        @media (max-width:768px) and (min-width:414px) {
+        #id1{
+              background-color: black;
+              color: white;
+              width:50%;
+            }
+         #id2{
+            background-color: rgb(250, 7, 7);
+              color: white;
+              width:50%;  
+            }
+        }
+
+        /* for creating a responsive image we should style this manner:-  */
+        img{
+            width: 100%;
+            height: auto;
+        }
+        /* same goes for video also!
+         video{
+            width: 100%;
+            height: auto;
+         } */
+    </style>
+</head>
+<body>
+<!--
+The "@media rule",introduced in CSS2,made it possible to define different style rules for different media types.
+Examples: You could have one set of style rules for computer screens,one for printers,one for handheld devices,one for television-type devices,and so on.
+
+Unfortunately these media types never got a lot of support by devices, other than the "print media type".
+
+"Media queries" in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+
+Media queries can be used to check many things, such as:
+1. width and height of the viewport
+2. width and height of the device
+3. orientation (is the tablet/phone in landscape or portrait mode?)
+4. resolution
+ -->
+ <div id="id1">
+    <h1> id1 </h1>
+ </div>
+ <div id="id2">
+    <h1> id2 </h1>
+ </div>
+
+ <img src="../images/mia_malkova.jpg">
+</body>
+</html>

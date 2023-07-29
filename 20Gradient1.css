@@ -1,0 +1,56 @@
+#id1{
+    /* By-default --  Top to bottom */
+    background-image: linear-gradient(red,green);
+    width: 800px;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+}
+#id2{
+    /* Left to Right */
+    background-image: linear-gradient(to right, red,green);
+    width: 800px;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+}
+#id3{
+    /* Diagonal */
+    background-image: linear-gradient(to bottom right,red,green);
+    width: 800px;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+}
+#id4{
+    /* Some angle */
+    background-image: linear-gradient(120deg,red,green);
+    width: 800px;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+}
+#id5{
+    /* multiple color */
+    background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    width: 800px;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+}
+#id6{
+    /* Using Transparency */
+    background-image: linear-gradient(to right, rgb(255, 255, 255),red);
+    width: 800px;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+}
+#id7{
+    /* Repeating a linear-gradient */
+    background-image: repeating-linear-gradient(red, yellow 10%, green 20%);
+    width: 800px;
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+}

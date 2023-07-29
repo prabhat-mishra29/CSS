@@ -1,0 +1,9 @@
+#parent
+{
+   border: 2px solid red;
+   width: 800px;
+}
+#child{
+   border: 2px solid blue;
+   width: 50%;  /* [50% of parent <div>] */
+    } 

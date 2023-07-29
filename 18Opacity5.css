@@ -1,0 +1,17 @@
+.second {
+    border: 2px solid black;
+    background-image:url(../images/mia_malkova.jpg);
+    background-repeat: repeat;
+    background-size: 10% 50%;
+  }
+  .third{
+    background-color: aliceblue;
+    color: blue;
+    margin: 20px;
+    padding: 20px;
+    opacity:0.5;
+  }
+  .third p{
+    font-size: large;
+    text-align: center;
+  }

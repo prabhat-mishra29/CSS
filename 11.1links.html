@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+ /* links can be styled differently depending on what 'state' they are in.
+    a:link    ---  a normal, unvisited link
+    a:visited ---  a link the user has visited
+    a:hover   ---  a link when the user mouses over it
+    a:active  ---  a link the moment it is clicked*/ 
+    
+ /*   'state' in CSS can be defined as "a:link".
+    
+    according to w3schools,link should follow this manner.(link,visited,hover,active at last)
+     a:hover MUST come after a:link and a:visited.
+     a:active MUST come after a:hover. */
+     
+/* The "text-decoration" property is mostly used to remove underlines from links.
+The "background-color" property can be used to specify a background color for links.*/
+     
+   /* "unvisited link" means you donot visit that link. */
+    a:link {
+  color: red;
+  text-decoration: none;
+  background-color: cyan;
+}
+
+/* "visited link" means you already visited that link. */
+a:visited {
+  color: green;
+  text-decoration: none;
+  background-color: yellow;
+}
+
+/* "mouse over link" means take your mouse on that link. */
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+  background-color: lightgreen;
+}
+
+/* "selected link" means after you selected link, it shows a color.  */
+a:active {
+  color: blue;
+  text-decoration: underline;
+  background-color: hotpink;
+}
+    </style>
+</head>
+<body>
+    <p>VISITED</p> <a href="https://www.google.com">Google</a>
+    <p>UNVISITED</p> <a href="https://www.google22.com">Google</a> 
+</body>
+</html>

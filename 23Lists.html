@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The "list-style-type" property specifies the type of list item marker. */
+      #id1{
+        list-style-type:square;
+      }
+      #id2{
+        list-style-type: upper-roman;
+      }
+
+      #id3{
+        /* IMAGES:---- */
+        list-style-image: url(../images/logo_short_version.jpg);
+      }
+
+/* "list-style-position: outside;" means that the bullet points will be outside the list item. The start 
+    of each line of a list item will be aligned vertically. This is default: */
+    #id4{
+        list-style-position: outside;
+      }
+      #id4 li{
+        border: 2px solid red;
+      }
+
+/* "list-style-position: inside;" means that the bullet points will be inside the list item. As it is 
+    part of the list item, it will be part of the text and push the text at the start: */
+    #id5{
+        list-style-position: inside;
+      }
+      #id5 li{
+        border: 2px solid red;
+      }
+
+/* The "list-style-type:none" property can also be used to remove the markers/bullets */
+#id6{
+    list-style-type:none
+      }
+
+
+#id7{
+    background-color:rgb(0, 81, 255) ;
+    padding: 13px;
+}
+#id7 li{
+    margin: 5px;
+    background-color: aqua;
+}
+    </style>
+</head>
+<body>
+    
+    <ul id="id1">
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Water-melon</li>
+    </ul>
+
+    <ol id="id2">
+        <li>cricket</li>
+        <li>football</li>
+        <li>basketball</li>
+        <li>vollyball</li>
+    </ol>
+
+    <ul id="id3">
+        <li>Mango</li>
+        <li>Apple</li>
+        <li>Orange</li>
+        <li>Water-melon</li>
+    </ul>
+
+    <ol id="id4">
+        <li>cricket</li>
+        <li>football</li>
+        <li>basketball</li>
+        <li>vollyball</li>
+    </ol>
+
+    <ol id="id5">
+        <li>cricket</li>
+        <li>football</li>
+        <li>basketball</li>
+        <li>vollyball</li>
+    </ol>
+
+    <ol id="id6">
+        <li>cricket</li>
+        <li>football</li>
+        <li>basketball</li>
+        <li>vollyball</li>
+    </ol>
+
+
+    <ol id="id7"> 
+        <li>cricket</li>
+        <li>football</li>
+        <li>basketball</li>
+        <li>vollyball</li>
+    </ol>
+</body>
+</html>

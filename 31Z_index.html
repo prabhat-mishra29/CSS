@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* 
+The z-index Property:---
+When elements are positioned, they can overlap other elements.
+The z-index property specifies the stack order of an element (which element should be placed in front of, or behind, the others).
+An element can have a positive or negative stack order.
+
+Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements).         */
+
+#id2{
+    width:50%;
+    padding: 50px;
+}
+#id3{
+    background-color: green;
+        width:100px;
+        height:100px;
+      display: inline-block; 
+      position: relative;
+      z-index:1;
+}
+
+#id4{
+    background-color: rgb(42, 4, 255);
+        width: 100px;
+        height:100px;
+      display: inline-block; 
+      position: relative;
+      top: 50px;  
+      left: -50px;
+      z-index:3;
+}
+#id5{
+    background-color: rgb(251, 6, 218);
+        width: 100px;
+        height:100px;
+      display: inline-block; 
+      position: relative;
+      top: 100px;  
+      left: -100px;
+      z-index:2;
+}
+    </style>
+</head>
+<body>
+    <div id="id2">
+        <div id="id3"></div>
+        <div id="id4"></div>
+        <div id="id5"></div>
+       </div><br><br>
+</body>
+</html>

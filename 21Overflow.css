@@ -1,0 +1,38 @@
+#id1{
+    border:2px solid red;
+    width: 300px;
+    height: 200px;
+    overflow: visible; /*By-default*/
+}
+
+#id2{
+    border:2px solid red;
+    width: 300px;
+    height: 200px;
+    overflow: hidden; 
+}
+
+#id3{
+    border:2px solid red;
+    width: 300px;
+    height: 200px;
+    overflow: scroll; 
+}
+
+/* overflow-x --- specifies what to do with the left/right edges of the content.
+   overflow-y --- specifies what to do with the top/bottom edges of the content. */
+   #id4{
+    border:2px solid red;
+    width: 300px;
+    height: 200px;
+    overflow-x:hidden; 
+    overflow-y: scroll;
+}
+
+/* The auto value is similar to scroll, but it adds scrollbars only when necessary. */
+#id5{
+    border:2px solid red;
+    width: 300px;
+    height: 200px;
+    overflow: auto;
+}

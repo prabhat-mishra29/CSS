@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*    by-default 'border style' is none.  
+              by-default 'border width' is 1px. 
+              by-default 'border color' is black.   */
+        #id1
+        {
+            border-style: solid;
+            border-width: 3px;
+            border-color: red;
+        }
+        #id2
+        {
+            border-style: dashed;
+            border-width: 3px;
+            border-color: rgb(202, 224, 31);
+        }
+        #id3
+        {
+            border-style: dotted;
+            border-width: 3px;
+            border-color: rgb(51, 17, 245);
+        }#id4
+        {
+            border-style: double;
+            border-width: 3px;
+            border-color: rgb(0, 255, 38);
+        }
+        #id5
+        {
+            border-style: groove;
+            border-width: 3px;
+            border-color: rgb(0, 200, 255);
+        }
+        #id6
+        {
+            border-style: outset;
+            border-width: 15px;
+            border-color: rgb(250, 6, 250);
+        }
+        #id7
+        {
+            border-style: inset;
+            border-width: 15px;
+            border-color: red;
+        }
+        #id8
+        {
+            border-style: dotted dashed double groove;
+                      /*    TOP  RIGHT  BOTTOM  LEFT */
+            border-width: 3px;
+            border-color: rgb(0, 255, 38);
+        }
+        #id9
+        {
+            border-style: dotted dashed;
+                 /*   TOP & BOTTOM    LEFT&RIGHT  */
+            border-width: 3px;
+            border-color: rgb(255, 17, 0);
+        }
+        #id10
+        {   
+            /* shortcut for border which contain(style,width,color) */
+            border:dotted 6px cornflowerblue
+        }
+        #id11
+        {   
+            /* specific side border */
+            border-top-style:double ;
+            border-top-width: 7px;
+            border-top-color: cyan;
+        }
+        #id12
+        {   
+            /* shortcut for specific side border */
+            border-top:dashed 10px teal;
+        }
+    </style>
+</head>
+<body>
+    <div id="id1">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+    <div id="id2">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+    <div id="id3">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+    <div id="id4">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+    <div id="id5">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+    <div id="id6">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+    <div id="id7">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+
+    <!---------------------   DIFFERENT BORDER AT DIFFERENT SIDE.  ---------------------->
+    <div id="id8">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+    <div id="id9">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+    <div id="id10">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+    <div id="id11">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+    <div id="id12">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit optio illum, distinctio molestiae possimus quasi beatae culpa consequatur qui veniam illo quo tempore dolore fugiat officia itaque repellendus. Reprehenderit quae facere at quibusdam nisi numquam minus voluptatem magnam dicta laudantium fuga quos eligendi aspernatur similique assumenda nihil voluptas pariatur sint, aliquid quaerat? Porro fugit officiis et dignissimos deleniti distinctio iste vitae adipisci? Dolore quae ea, consequatur blanditiis necessitatibus esse itaque officiis inventore illo saepe ad aperiam iure incidunt architecto doloribus fugit non atque debitis amet rem, voluptas maxime dolorem similique adipisci! Nihil assumenda mollitia id. Dolore saepe deserunt aperiam assumenda.
+        </p>
+    </div><br><br><br>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* A CSS pseudo-element is used to style specified parts of an element.
+         selector::pseudo-element {
+         property: value;
+          } */
+
+  p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p::first-line {
+  color: #0000ff;
+  font-variant: small-caps;
+}  
+
+h1::before{
+    content: url(../images/logo_short_version.jpg);
+}
+h1::after{
+  content: " abinashhhhhh";
+}
+
+/* Select element :------- */
+::selection {
+  color: red;
+  background: yellow;
+}
+    </style>
+</head>
+<body>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem aliquid cum distinctio necessitatibus at unde doloremque? Eveniet veniam qui optio aut eligendi at totam. Natus alias perferendis debitis porro rem exercitationem tempora a nihil. Quod ratione dignissimos soluta eaque ad, ipsum placeat. Officia quisquam praesentium ad quae veritatis suscipit neque?</p>
+    <h1>Maghiaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
+</body>
+</html>

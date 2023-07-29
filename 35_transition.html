@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* CSS Transitions:----
+     CSS transitions allows you to change property values smoothly, over a given duration. 
+     1.transition-delay
+     2.transition-duration
+     3.transition-property
+     4.transition-timing-function
+    
+To create a transition effect, you must specify two things:
+ 1.the CSS property you want to add an effect to(transiton-property)
+ 2.the duration of the effect(transition-duration)
+ Note: If the duration part is not specified, the transition will have no effect, because the default value is 0.
+ 
+Transition-property:----
+this  property specifies the name of the CSS property the transition effect is for (the transition  
+effect will start when the specified CSS property changes).. [none,specific property,all]
+
+Transition-duration:----- 
+this property specifies how many seconds (s) or milliseconds (ms) a transition effect takes to complete.
+
+Transition-delay:---- 
+this property specifies when the transition effect will start.
+The transition-delay value is defined in seconds (s) or milliseconds (ms).
+
+Transition-timing-function::----
+ property specifies the speed curve of the transition effect.
+This property allows a transition effect to change speed over its duration.
+
+VALUE	    DESCRIPTTION
+ease	    Default value. Specifies a transition effect with a slow start, then fast, then end slowly 
+            (equivalent to cubic-bezier(0.25,0.1,0.25,1))
+linear	    Specifies a transition effect with the same speed from start to end (equivalent to 
+            cubic-bezier (0,0,1,1))
+ease-in	    Specifies a transition effect with a slow start (equivalent to cubic-bezier(0.42,0,1,1))
+ease-out    Specifies a transition effect with a slow end (equivalent to cubic-bezier(0,0,0.58,1))
+ease-in-out	Specifies a transition effect with a slow start and end (equivalent to cubic-bezier(0.42,0,0.58,1))
+step-start	Equivalent to steps(1, start)
+step-end	Equivalent to steps(1, end)
+steps(int,start|end)	Specifies a stepping function, with two parameters. The first parameter 
+                        specifies the number of intervals in the function. It must be a positive integer (greater than 0).The second parameter, which is optional, is either the value "start" or "end", and specifies the point at which the change of values occur within the interval. If the second parameter is omitted, it is given the value "end"
+cubic-bezier(n,n,n,n)	Define your own values in the cubic-bezier function. Possible values are numeric 
+                        values from 0 to 1*/
+ #id1{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin:30px;
+    transition-property:width,height,background-color;
+    transition-duration: 3s;
+    /* transition-delay:2s; */
+    transition-timing-function: ease;
+    /* [transition:property,duration,timing-function,delay]  */
+ }
+ #id1:hover{
+  width:500px;
+  height:200px;
+  background-color: rgb(0, 255, 76);
+ } 
+    </style>
+</head>
+<body>
+    <div id="id1"></div>
+</body>
+</html>

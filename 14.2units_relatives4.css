@@ -1,0 +1,12 @@
+html{
+   border: 2px solid red;
+   font-size: 30px; /* let us take by-default value of root tag or <html> tag is 30px */
+}
+#parent
+{   border: 2px solid rgb(6, 42, 250);
+   font-size: 2rem; /* ["2rem" means 2*root px = 60px] */
+}
+#child{
+  border: 2px solid rgb(6, 250, 10);
+  font-size:2em;  /* ["2em" means 2*parent px = 120px] */
+    } 

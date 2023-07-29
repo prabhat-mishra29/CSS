@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* CSS 2D Transforms:------
+     CSS transforms allow you to move, rotate, scale, and skew elements. 
+    With the CSS transform property you can use the following 2D transformation methods:---
+      translate(),rotate(),scaleX(),scaleY(),scale(),skewX(),skewY(),skew(),matrix()
+    Note:this only on "block" element and "inline-block" element! */
+ 
+/* The translate() Method:----
+       The translate() method moves an element from its current position (according to the parameters given for the X-axis and the Y-axis).  */
+      #id1{
+        width: 20%;
+        height: 70px;
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        transform: translate(20px, 50px);
+      }
+
+      
+/* The rotate() Method:-----
+The rotate(deg) method rotates an element clockwise(+ve) or counter-clockwise(-ve) according to a given degree. */
+#id2{
+        width: 20%;
+        height: 70px;
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        transform: rotate(60deg);
+    }
+
+/*  The scale() Method::----
+The scale(x,y) method increases or decreases the size of an element (according to the parameters given for the width and height).*/
+#id3{
+        width: 20%;
+        height: 70px;
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        transform: scale(0.5,0.7);
+    }
+ /* The scaleX() Method:-----
+The scaleX() method increases or decreases the width of an element. */
+#id4{
+        width: 20%;
+        height: 70px;
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        transform: scaleX(0.5);
+    }
+/* The scaleY() Method:-----
+The scaleY() method increases or decreases the height of an element. */
+#id5{
+        width: 20%;
+        height: 70px;
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        transform: scaleY(0.7);
+    }
+
+
+/* The skew() Method:-----
+The skew() method skews an element along the X and Y-axis by the given angles. */
+#id6{
+        width: 20%;
+        height: 70px;
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        transform: skew(20deg,20deg);
+    }
+/* The skewX() Method:-----
+The skewX() method skews an element along the X-axis by the given angle. */
+#id7{
+        width: 20%;
+        height: 70px;
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        transform: skewX(20deg);
+    }
+/* The skewY() Method:----
+The skewY() method skews an element along the Y-axis by the given angle. */
+#id8{
+        width: 20%;
+        height: 70px;
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        transform: skewY(20deg);
+    }
+
+/*The matrix() Method:-------
+The matrix() method combines all the 2D transform methods into one.
+The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())  */
+#id9{
+        width: 20%;
+        height: 80px;
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+    }
+
+/* Transform-origin Property:-------
+The transform-origin property allows you to change the position of transformed elements.
+2D transformations can change the x- and y-axis of an element.3D transformations can also change the z-axis of an element.
+Note: This property must be used together with the transform property.
+
+Default value:	50% 50% 0
+x-axis --- left,center,right,length,% 
+y-axis --- left,center,right,length,%
+z-axis --- length  */
+#id10{
+        width: 20%;
+        height: 80px;
+        background-color: green;
+        color: white;
+        border: 1px solid black;
+        transform: rotate(45deg);
+        transform-origin: 20% 40%;
+}
+      </style>
+</head>
+<body>
+    <div id="id1">Div1</div><br><br><br>
+    <div id="id2">Div2</div><br><br><br>
+    <div id="id3">Div3</div><br><br><br>
+    <div id="id4">Div4</div><br><br><br>
+    <div id="id5">Div5</div><br><br><br>
+    <div id="id6">Div6</div><br><br><br>
+    <div id="id7">Div7</div><br><br><br>
+    <div id="id8">Div8</div><br><br><br>
+    <div id="id9">Div9</div><br><br><br>
+    <div id="id10">Div10</div><br><br><br>
+</body>
+</html>

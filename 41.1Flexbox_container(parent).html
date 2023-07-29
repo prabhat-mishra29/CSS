@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+/* 
+Before the Flexbox Layout module, there were four layout modes:---
+   1.Block, for sections in a webpage
+   2.Inline, for text
+   3.Table, for two-dimensional table data
+   4.Positioned, for explicit position of an element
+The "Flexible Box" Layout Module, makes it easier to design flexible responsive layout structure without using float or positioning. */
+
+/* "Without-flexbox":-------  */
+.parent1{
+   background-color: rgb(31, 31, 239);
+}
+.child1{
+   background-color: white;
+   margin: 20px;
+   padding:20px;
+   font-size: 15px;
+   display: inline-block;
+   width: 70px; 
+   text-align: center;
+}
+
+/* " With-flex ":--------  
+The 'parent' becomes flexible by setting the display property to flex: 
+
+The flex container properties are:---
+   1.flex-direction
+   2.flex-wrap
+   3.flex-flow
+   4.justify-content
+   5.align-items
+   6.align-content
+   
+1.flex-direction:---
+       The 'flex-direction' property defines in which direction the container wants to stack the flex items.*/
+.parent2{
+   background-color: blue;
+   display: flex;
+   flex-direction: column; /* It can be "column-reverse","row","row-reverse" */
+}
+.child2{
+   background-color: white;
+   margin: 20px;
+   padding:20px;
+   font-size: 15px;
+   width:70px;
+   text-align: center;
+}
+
+/* 
+ 2.flex-wrap:----
+       The flex-wrap property specifies whether the flex items should wrap or not.
+       Specifies whether the flex items should wrap or not, if there is not enough room for them on one flex line. */
+.parent3{
+   background-color: blue;
+   display: flex;
+  flex-wrap: wrap; /* It can be "no-wrap"(by-default),"wrap-reverse" */
+}
+.child3{
+   background-color: white;
+   margin: 20px;
+   padding:20px;
+   font-size: 15px;
+   width:70px;
+   text-align: center;
+}
+
+/* 
+3.flex-flow :------
+      The flex-flow property is a shorthand property for setting both the 'flex-direction' and 'flex-wrap' properties. */
+/* 
+4.justify-content :------ (horizontal-space)
+      The justify-content property is used to align the flex items. 
+      Horizontally aligns the flex items when the items do not use all available space on the main-axis. */
+.parent4{
+   background-color: blue;
+   display: flex;
+   flex-flow: row wrap;
+   justify-content:center;/* It can be "flex-start","flex-end","space-around","space-between" */
+}
+.child4{
+   background-color: white;
+   margin: 20px;
+   padding:20px;
+   font-size: 15px;
+   width:70px;
+   text-align: center;
+}
+
+/*
+5.align-items :----
+     The align-items property is used to align the flex items.
+     Vertically aligns the flex items when the items do not use all available space on the cross-axis. */
+.parent5{
+   background-color: blue;
+   display: flex;
+   flex-flow: row wrap; /*  By-default */
+   justify-content:space-between;
+   height: 200px;
+   align-items:center;/* It can be "flex-start","flex-end","stretch"(By-default),"baseline"  */
+}
+.child5{
+   background-color: white;
+   margin: 20px;
+   padding:20px;
+   font-size: 15px;
+   width:70px;
+   text-align: center;
+}
+
+/*
+6.align-content :------ (vertical-space,opposite of justify-content)
+       The align-content property is used to align the flex lines.
+       Modifies the behavior of the flex-wrap property. It is similar to align-items, but instead of aligning flex items, it aligns flex lines.  */
+.parent6{
+   background-color: blue;
+   display: flex;
+  flex-wrap: wrap; 
+  height: 400px;
+  align-content:flex-start;/*  It can be "flex-start","flex-end","stretch"(By-default),"space-around","space-between"  */ 
+}
+.child6{
+   background-color: white;
+   margin: 20px;
+   padding:20px;
+   font-size: 15px;
+   width:70px;
+   text-align:center;
+}
+    </style>
+</head>
+<body>
+    <div class="parent1">
+        <div class="child1">1</div>
+        <div class="child1">2</div>
+        <div class="child1">3</div>
+        <div class="child1">4</div>
+    </div>
+  <hr>
+
+    <div class="parent2">
+        <div class="child2">1</div>
+        <div class="child2">2</div>
+        <div class="child2">3</div>
+        <div class="child2">4</div>
+    </div><br>
+    <div class="parent3">
+        <div class="child3">1</div>
+        <div class="child3">2</div>
+        <div class="child3">3</div>
+        <div class="child3">4</div>
+        <div class="child3">5</div>
+        <div class="child3">6</div>
+        <div class="child3">7</div>
+        <div class="child3">8</div>
+    </div><br>
+    <div class="parent4">
+        <div class="child4">1</div>
+        <div class="child4">2</div>
+        <div class="child4">3</div>
+    </div><br>
+    <div class="parent5">
+        <div class="child5">1</div>
+        <div class="child5">2</div>
+        <div class="child5">3</div>
+    </div><br>
+    <div class="parent6">
+        <div class="child6">1</div>
+        <div class="child6">2</div>
+        <div class="child6">3</div>
+        <div class="child6">4</div>
+        <div class="child6">5</div>
+        <div class="child6">6</div>
+        <div class="child6">7</div>
+        <div class="child6">8</div>
+    </div><br>
+
+</body>
+</html>

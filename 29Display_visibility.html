@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .first{
+            border: 2px solid red;
+            height:100px;
+            width: 40%;
+            display:block;
+        }
+        .second{
+            border: 2px solid red;
+            height:100px;
+            width: 40%;
+            display:inline;
+        }
+        .third{
+            border: 2px solid red;
+            height:100px;
+            width: 40%;
+            display:inline-block;
+        }
+
+/* Hiding an element can be done by setting the 'display' property to 'none'. The element will be hidden, 
+      and the page will be displayed as if the element is not there.
+
+   "visibility:hidden;"
+      also hides an element.
+      However, the element will still take up the same space as before. The element will be hidden, but 
+      still affect the layout. */
+        .forth{
+            border: 2px solid red;
+            height:100px;
+            width: 40%;
+            display:block;
+        }
+        #id1{
+            display: none;
+        }
+        #id2{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    
+<!-- The display property specifies if/how an element is displayed.
+Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline. -->
+
+<!-- Block-level Elements :-----
+1. A block-level element always starts on a new line. 
+2.takes up the full width available.
+3.stretches out to the left and right as far as it can,means increase or decrease the height and width. 
+     <div>,<h1> - <h6>,<p>,<form>,<header>,<footer>,<section>   
+-->
+
+<!-- Inline Elements:----
+    1.An inline element does not start on a new line.
+    2.only takes up as much width as necessary. 
+    3.cannot increase or decrease height and width.
+     <span>,<a>,<img>  -->
+
+<!-- Inline-block:-----
+    Mixture of inline and block.
+    1.An inline element does not start on a new line.
+    2.only takes up as much width as necessary.
+    3.can increase or decrease height and width.
+     --> 
+
+     <div class="first">This is first div</div>
+     <div class="first">This is second div</div>
+<br><br>
+     <div class="second">This is first div</div>
+     <div class="second">This is second div</div>
+<br><br>
+     <div class="third">This is first div</div>
+     <div class="third">This is second div</div>
+<br><br>
+    <div class="forth" id="id1">This is first div</div>
+    <div class="forth">This is second div</div>
+<br><br> <hr>
+    <div class="forth" id="id2">This is first div</div>
+    <div class="forth">This is second div</div> 
+</body>
+</html>

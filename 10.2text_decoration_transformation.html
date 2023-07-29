@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <styLe>
+        
+/*Text-decoration           --- Sets all the text-decoration properties in one declaration
+  Text-decoration-color	    --- Specifies the color of the text-decoration
+  Text-decoration-line	    --- Specifies the kind of text decoration to be used (underline, overline, etc.)
+  Text-decoration-style	    --- Specifies the style of the text decoration (solid, dotted, etc.)
+  Text-decoration-thickness --- Specifies the thickness of the text decoration line
+ */
+
+ /* You can combine more than one value, like overline and underline to display lines both over and 
+    under a text. */
+    #id1 {
+  text-decoration-line: overline;
+  text-decoration-color: red;
+  text-decoration-style: solid;
+}
+
+h2 {
+  text-decoration-line: line-through;
+  text-decoration-color: blue;
+  text-decoration-style: double;
+}
+
+h3 {
+  text-decoration-line: underline;
+  text-decoration-color: green;
+  text-decoration-style: dotted;
+  text-decoration-thickness: 30%;
+  
+}
+
+h4 {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+  text-decoration-style: dashed;
+  text-decoration-thickness: 5px;
+}
+
+h5 {
+  text-decoration-line: overline underline;
+  text-decoration-color: purple;
+  text-decoration-style: wavy;
+  text-decoration-thickness: auto;
+}
+
+/* The text-decoration property is a shorthand property for:
+   text-decoration-line (required)
+   text-decoration-color (optional)
+   text-decoration-style (optional)
+   text-decoration-thickness (optional)
+   
+   text-decoration: underline;
+   text-decoration: underline red;
+   text-decoration: underline red double; */
+
+#id2{
+    text-decoration: underline red double 5px;
+}
+
+/* All links in HTML are underlined by default. Sometimes you see that links are styled with no underline. 
+ The "text-decoration: none"; is used to remove the underline from links */
+ a{
+    text-decoration: none;
+ }
+
+
+ #p1{
+  text-transform: uppercase;
+}
+
+#p2{
+  text-transform: lowercase;
+}
+
+#p3{
+  text-transform: capitalize;
+}
+    </styLe>
+</head>
+<body>
+    <h1 id="id1"> Abinash Maghia </h1>
+    <h2> Abinash Maghia </h2>
+    <h3> Abinash Maghia </h3>
+    <h4> Abinash Maghia </h4>
+    <h5> Abinash Maghia </h5>
+    <h1 id="id2"> Abinash Maghia </h1>
+    <a href="https:\\google.com" target="_blank">Google</a>
+
+    <!-- The text-transform property is used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word: -->
+    <p id="p1">Sumit Madarchod</p>
+    <p id="p2">Sumit Madarchod</p>
+    <p id="p3">Sumit Madarchod</p>
+</body>
+</html>
